@@ -19,6 +19,9 @@ import {
   img1,
   img2,
   img3,
+  img4,
+  img5,
+  img6,
 } from "../assets";
 import {
   ciacon,
@@ -294,7 +297,69 @@ const projects = [
     image: img3,
     source_code_link: "https://github.com/ArijitDutta96395/Full-stack",
   },
-  
+  {
+    name: "Inno_Home",
+    description:
+      "A smart home automation system using ESP32, and AMAZON ALEXA APP that enables real-time appliance control via a web, mobile app dashboard and manual two-way switches, with secure cloud communication, dynamic Wi-Fi management, and state synchronization for a scalable and reliable IoT solution.",
+    tags: [
+      {
+        name: "IoT",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ESP RainMaker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS Cloud",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: img4,
+    source_code_link: "https://github.com/ArijitDutta96395/Home_Automation",
+  },
+  {
+    name: "Smart Waste Classifier",
+    description:
+      "A CNN-based image classification system using TensorFlow or Keras that efficiently classifies diverse images into two categories Recycleable or Non-Recyclable with Conv2D, MaxPooling, and Dense layers, enhanced by advanced data augmentation for improved accuracy, and supports smooth training, evaluation, and real-time inference.",
+    tags: [
+      {
+        name: "Deep Learning",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tensor Flow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ImageRec",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: img5,
+    source_code_link: "https://github.com/ArijitDutta96395/Edunet-Project-1",
+  },
+  {
+    name: "Narrato",
+    description:
+      "A Secure Blog Application built with PHP 8, MySQL, and Bootstrap 5. It offers user registration & login, rich-text post creation with full CRUD, and a responsive UI, while a password-protected admin dashboard manages users and posts—delivering a reliable publishing experience on an Apache (XAMPP) stack.",
+    tags: [
+      {
+        name: "bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Creator Tools",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: img6,
+    source_code_link: "https://github.com/ArijitDutta96395/blog_app",
+  },
 ];
 
 export {
