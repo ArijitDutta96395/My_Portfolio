@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white flex items-center gap-8`}>
             Hi, I'm <span className='text-[#915EFF]'>Arijit Dutta</span>
             <div className="animated-border ml-20">
-              <img src="/src/assets/photo.png" alt="Arijit Dutta" className="w-40 h-40 rounded-lg relative z-10 image-shadow" />
+              <img src="/photo.png" alt="Arijit Dutta" className="w-40 h-40 rounded-lg relative z-10 image-shadow" />
             </div>
           </h1>
           <p className={`${styles.heroSubText} mt-2 mb-10 text-white-100`}>
