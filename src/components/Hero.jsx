@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[90px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -14,10 +14,13 @@ const Hero = () => {
         </div>
 
         <div className='flex flex-col'>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white flex items-center gap-8`}>
             Hi, I'm <span className='text-[#915EFF]'>Arijit Dutta</span>
+            <div className="animated-border ml-20">
+              <img src="/src/assets/photo.png" alt="Arijit Dutta" className="w-40 h-40 rounded-lg relative z-10 image-shadow" />
+            </div>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 mb-10 text-white-100`}>
             Final Year Electronics and Communication Engineering <br className='sm:block hidden' />
             passionate about building smart devices & Full-Stack Web applications.
           </p>

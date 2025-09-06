@@ -114,6 +114,52 @@
   -webkit-text-fill-color: transparent;
 }
 
+
+
+/* image border animation */
+@keyframes borderGlow {
+  0% {
+    background: conic-gradient(from 0deg, #915EFF, #ffffff, #915EFF, transparent, #915EFF);
+  }
+  25% {
+    background: conic-gradient(from 90deg, #915EFF, #ffffff, #915EFF, transparent, #915EFF);
+  }
+  50% {
+    background: conic-gradient(from 180deg, #915EFF, #ffffff, #915EFF, transparent, #915EFF);
+  }
+  75% {
+    background: conic-gradient(from 270deg, #915EFF, #ffffff, #915EFF, transparent, #915EFF);
+  }
+  100% {
+    background: conic-gradient(from 360deg, #915EFF, #ffffff, #915EFF, transparent, #915EFF);
+  }
+}
+
+.animated-border {
+  position: relative;
+  padding: 6px;
+  border-radius: 14px;
+  background: conic-gradient(from 0deg, #915EFF, #ffffff, #915EFF, transparent, #915EFF);
+  background-size: 400% 400%;
+  animation: borderGlow 6s linear infinite;
+}
+
+.animated-border::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: black;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.image-shadow {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
