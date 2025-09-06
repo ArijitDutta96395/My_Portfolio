@@ -1,4 +1,0 @@
-- [x] Remove duplicate ml-20 margin from img in Hero.jsx
-- [ ] Reduce padding in .animated-border to fit border closer to image
-- [ ] Adjust .animated-border::before positioning to match new padding
-- [ ] Test the changes to ensure border fits image without extra space
