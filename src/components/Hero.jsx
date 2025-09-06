@@ -5,33 +5,49 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
+      {/* Content block - shifted down */}
       <div
-        className={`absolute inset-0 top-[90px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        style={{ top: "70px" }} // pushes only the content down
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div className='flex flex-col'>
-          <h1 className={`${styles.heroHeadText} text-white flex items-center gap-8`}>
-            Hi, I'm <span className='text-[#915EFF]'>Arijit Dutta</span>
+        <div className="flex flex-col">
+          <h1
+            className={`${styles.heroHeadText} text-white flex items-center gap-8`}
+          >
+            Hi, I'm <span className="text-[#915EFF]">Arijit Dutta</span>
             <div className="animated-border ml-20">
-              <img src="/photo.png" alt="Arijit Dutta" className="w-40 h-40 rounded-lg relative z-10 image-shadow" />
+              <img
+                src="/photo.png"
+                alt="Arijit Dutta"
+                className="w-40 h-40 rounded-lg relative z-10 image-shadow"
+              />
             </div>
           </h1>
           <p className={`${styles.heroSubText} mt-2 mb-10 text-white-100`}>
-            Final Year Electronics and Communication Engineering <br className='sm:block hidden' />
-            passionate about building smart devices & Full-Stack Web applications.
+            Final Year Electronics and Communication Engineering{" "}
+            <br className="sm:block hidden" />
+            passionate about building smart devices & Full-Stack Web
+            applications.
           </p>
         </div>
       </div>
 
+      {/* Background Canvas - stays fixed */}
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about' className='min-w-[44px] min-h-[44px] flex items-center justify-center' aria-label="Scroll to about section">
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      {/* Scroll indicator */}
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a
+          href="#about"
+          className="min-w-[44px] min-h-[44px] flex items-center justify-center"
+          aria-label="Scroll to about section"
+        >
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -41,7 +57,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
         </a>
